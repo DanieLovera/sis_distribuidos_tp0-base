@@ -20,7 +20,7 @@ def get_service_client_config():
         CONFIG_PARAM_CONTAINER_NAME: "",
         "image": "client:latest",
         "entrypoint": "/client",
-        CONFIG_PARAM_ENVIRONMENT: ["CLI_LOG_LEVEL=DEBUG"],
+        CONFIG_PARAM_ENVIRONMENT: [],
         "volumes": ["./client/config.yaml:/config.yaml"],
         "networks": ["testing_net"],
         "depends_on": ["server"],
